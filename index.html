@@ -256,7 +256,7 @@ const REELS = [
 /* ===== end edit ===== */
 
 const $=s=>document.querySelector(s);
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&","<":"<",">":">",'"':"""}[c]));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"\x26amp;","<":"\x26lt;",">":"\x26gt;",'"':"\x26quot;"}[c]));
 document.getElementById("yr").textContent=new Date().getFullYear();
 
 // X + YouTube
