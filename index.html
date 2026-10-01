@@ -105,6 +105,18 @@ background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.75)),var(--g,linear
 .big{padding:26px;border-radius:22px;min-height:200px;justify-content:flex-end}
 .big h3{font-size:2.6rem}
 .big svg{width:34px;height:34px;margin-bottom:auto}
+/* closer */
+#closer{padding:56px 0 64px}
+.closer{max-width:560px;margin:0 auto;text-align:center;padding:40px 28px;border-radius:24px;border:1px solid rgba(255,45,149,.28);
+background:radial-gradient(420px 180px at 50% 0%,rgba(255,45,149,.10),transparent 70%),linear-gradient(180deg,#121218,#0c0c11);
+box-shadow:0 0 0 1px rgba(255,255,255,.02) inset,0 18px 60px -20px rgba(255,45,149,.22)}
+.closer .kicker{margin-bottom:14px}
+.closer p{color:var(--mut);margin:0 auto 26px;max-width:420px;font-size:1.02rem}
+.closer .alt{margin-top:18px;font-size:.88rem;color:#6f6f7e}
+.closer .alt a{color:var(--mut);text-decoration:none;border-bottom:1px solid rgba(255,45,149,.35);padding-bottom:1px}
+.closer .alt a:hover{color:var(--fg)}
+@media (max-width:520px){.closer{padding:32px 16px;border-radius:20px}.closer p{font-size:.96rem}.closer .btn{font-size:.82rem;letter-spacing:0;padding:12px 18px;white-space:nowrap}}
+@media (max-width:359px){.closer .btn{white-space:normal}}
 /* footer */
 footer{border-top:1px solid var(--line);padding:46px 0 60px;text-align:center}
 .soc{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:22px}
@@ -180,6 +192,15 @@ footer small{color:#6f6f7e;display:block;margin-top:6px}
     </div>
   </div>
 </div></section>
+
+<section id="closer"><div class="wrap">
+  <div class="closer">
+    <span class="kicker">to know more</span>
+    <p>No paywalls, no pitch. I'm keeping all of this free and open — take whatever's useful.</p>
+    <a class="btn p" href="https://www.instagram.com/mano_inst/" rel="noopener">Say hi on Instagram → @mano_inst</a>
+    <div class="alt"><a href="https://manowritingsblog.wordpress.com/" rel="noopener">the blog</a> &nbsp;·&nbsp; <a id="xcloser" href="https://x.com/mano_tweets" rel="noopener">X @mano_tweets</a></div>
+  </div>
+</div></section>
 </main>
 
 <footer id="links"><div class="wrap">
@@ -235,12 +256,12 @@ const REELS = [
 /* ===== end edit ===== */
 
 const $=s=>document.querySelector(s);
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&","<":"<",">":">",'"':"""}[c]));
 document.getElementById("yr").textContent=new Date().getFullYear();
 
 // X + YouTube
-["xcard","xfoot"].forEach(id=>$("#"+id).href="https://x.com/"+X_HANDLE);
-$("#xhandle").textContent="@"+X_HANDLE+" →"; $("#xfoot").textContent="X @"+X_HANDLE;
+["xcard","xfoot","xcloser"].forEach(id=>$("#"+id).href="https://x.com/"+X_HANDLE);
+$("#xhandle").textContent="@"+X_HANDLE+" →"; $("#xfoot").textContent="X @"+X_HANDLE; $("#xcloser").textContent="X @"+X_HANDLE;
 if(YOUTUBE_URL){const y=$("#youtube");const a=document.createElement("a");a.className=y.className;a.id="youtube";a.href=YOUTUBE_URL;a.rel="noopener";a.innerHTML=y.innerHTML.replace("channel coming soon","subscribe").replace('<span class="soon">Coming soon</span>','<span class="go">@manojreddy444 →</span>');y.replaceWith(a);}
 
 // legend
