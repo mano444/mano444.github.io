@@ -175,7 +175,7 @@ footer small{color:#6f6f7e;display:block;margin-top:6px}
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM9.7 15.1V8.9L15.5 12l-5.8 3.1Z"/></svg>
       <span class="kicker">YouTube</span>
       <h3>YouTube</h3>
-      <p>Longer drives and full cuts — channel coming soon.</p>
+      <p>Tesla POV Shorts — FSD, desert drives, SoCal, Telugu + English.</p>
       <span class="soon">Coming soon</span>
     </div>
   </div>
@@ -196,7 +196,7 @@ footer small{color:#6f6f7e;display:block;margin-top:6px}
 <script>
 /* ===== EDIT ME: all content lives here ===== */
 const X_HANDLE = "mano_tweets";
-const YOUTUBE_URL = ""; // paste channel URL to turn the card live
+const YOUTUBE_URL = "https://www.youtube.com/@manojreddy444"; // "" = coming soon
 
 const CLUSTERS = {
   core:    {label:"Core",    color:"#ffffff"},
@@ -241,7 +241,7 @@ document.getElementById("yr").textContent=new Date().getFullYear();
 // X + YouTube
 ["xcard","xfoot"].forEach(id=>$("#"+id).href="https://x.com/"+X_HANDLE);
 $("#xhandle").textContent="@"+X_HANDLE+" →"; $("#xfoot").textContent="X @"+X_HANDLE;
-if(YOUTUBE_URL){const y=$("#youtube");const a=document.createElement("a");a.className=y.className;a.id="youtube";a.href=YOUTUBE_URL;a.rel="noopener";a.innerHTML=y.innerHTML.replace("channel coming soon","subscribe").replace('<span class="soon">Coming soon</span>','<span class="go">Watch on YouTube →</span>');y.replaceWith(a);}
+if(YOUTUBE_URL){const y=$("#youtube");const a=document.createElement("a");a.className=y.className;a.id="youtube";a.href=YOUTUBE_URL;a.rel="noopener";a.innerHTML=y.innerHTML.replace("channel coming soon","subscribe").replace('<span class="soon">Coming soon</span>','<span class="go">@manojreddy444 →</span>');y.replaceWith(a);}
 
 // legend
 $("#legend").innerHTML=Object.values(CLUSTERS).map(c=>`<span><i style="background:${c.color}"></i>${c.label}</span>`).join("");
