@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>MANO — Tesla · AI Agents · Real-World Grok</title>
-<meta name="description" content="Mano's hub: Tesla reels, AI agents, real-world Grok, Telugu + English. Bots, templates, videos and links.">
+<title>Hey Mano — SoCal · Travel · Nature · Food · Tech</title>
+<meta name="description" content="Hey Mano: SoCal life, travel, beaches, nature photography, food ratings, reels — plus a little Tesla and AI. Telugu + English.">
 <meta name="theme-color" content="#07070a">
-<meta property="og:title" content="MANO">
-<meta property="og:description" content="Tesla · AI agents · real-world Grok · reels in Telugu + English.">
+<meta property="og:title" content="Hey Mano">
+<meta property="og:description" content="SoCal · Travel · Nature · Food · Tech — photos, food and reels.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://manowritingsblog.wordpress.com/wp-content/uploads/2023/10/varkala.jpeg?w=1200">
+<link rel="preconnect" href="https://manowritingsblog.wordpress.com">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307070a'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23fff'%3EM%3C/text%3E%3Ccircle cx='50' cy='14' r='6' fill='%23ff2d95'/%3E%3C/svg%3E">
 <style>
 :root{--bg:#07070a;--bg2:#0f0f14;--card:#14141b;--line:#23232e;--fg:#f4f4f6;--mut:#a3a3b2;--acc:#ff2d95;--acc2:#ff6fbf;
@@ -33,7 +35,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 nav{position:sticky;top:0;z-index:5;background:rgba(7,7,10,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;gap:18px;height:54px;overflow-x:auto;scrollbar-width:none}
 nav .wrap::-webkit-scrollbar{display:none}
-nav .logo{font:900 1.5rem/1 var(--head);text-decoration:none;letter-spacing:.04em;margin-right:auto}
+nav .logo{font:900 1.5rem/1 var(--head);white-space:nowrap;text-decoration:none;letter-spacing:.04em;margin-right:auto}
 nav .logo b{color:var(--acc)}
 nav a.l{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);text-decoration:none;white-space:nowrap;padding:6px 0}
 nav a.l:hover{color:var(--fg)}
@@ -123,101 +125,201 @@ footer{border-top:1px solid var(--line);padding:46px 0 60px;text-align:center}
 footer small{color:#6f6f7e;display:block;margin-top:6px}
 .fbig{font:900 clamp(3rem,15vw,6rem)/.85 var(--head);letter-spacing:.02em;margin-bottom:18px}
 .fbig b{color:var(--acc)}
+/* ===== Hey Mano additions ===== */
+:root{--sea:#3fd0c9;--sun:#ffb347}
+.hero{background:linear-gradient(180deg,rgba(7,7,10,.25) 0%,rgba(7,7,10,.55) 45%,var(--bg) 100%),radial-gradient(900px 500px at 85% 0%,rgba(255,179,71,.22),transparent 60%),url("https://manowritingsblog.wordpress.com/wp-content/uploads/2023/10/varkala.jpeg?w=1600") center 35%/cover no-repeat,#0b0b10}
+.hero h1{font-size:clamp(5.2rem,24vw,13.5rem)}
+.hero h1 span{color:var(--sun)}
+@media (max-width:520px){.hero .kicker{letter-spacing:.12em;font-size:.68rem}}
+.hero .kicker{color:#fff;background:rgba(0,0,0,.45);padding:7px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.tag em.s{color:var(--sea)} .tag em.o{color:var(--sun)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.chips a{font:700 .78rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:9px 12px;border-radius:999px;background:rgba(10,10,14,.6);border:1px solid rgba(255,255,255,.14)}
+.chips a:hover{border-color:var(--acc)}
+.kicker.sea{color:var(--sea)} .kicker.sun{color:var(--sun)}
+/* gallery */
+.gal{columns:3 250px;column-gap:12px}
+.gal figure{break-inside:avoid;margin:0 0 12px;position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card);cursor:zoom-in}
+.gal img{display:block;width:100%;height:auto;transition:transform .35s}
+.gal figure:hover img{transform:scale(1.03)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.78));font-size:.82rem;color:#e8e8ee}
+.gal figcaption b{display:block;font:900 1.25rem/1 var(--head);letter-spacing:.04em;text-transform:uppercase;color:#fff}
+.gal button{all:unset;display:block;width:100%}
+@media (max-width:520px){.gal{columns:2;column-gap:8px}.gal figure{margin-bottom:8px;border-radius:12px}.gal figcaption{font-size:.7rem;padding:18px 8px 7px}.gal figcaption b{font-size:1rem}}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(96vw,1100px);max-height:94vh;color:#fff}
+dialog.lb::backdrop{background:rgba(0,0,0,.88)}
+dialog.lb img{display:block;max-width:100%;max-height:84vh;border-radius:14px;margin:0 auto}
+dialog.lb p{text-align:center;margin:10px 0 0;color:var(--mut)}
+dialog.lb p b{color:#fff}
+dialog.lb .x{position:fixed;top:14px;right:16px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:#fff;font-size:1.3rem;cursor:pointer}
+/* food */
+.food{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.fcard{display:flex;flex-direction:column;border-radius:18px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.fcard .ph{position:relative;aspect-ratio:4/3;background:#111}
+.fcard .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.fcard .sc{position:absolute;top:10px;right:10px;font:900 1.15rem/1 var(--head);letter-spacing:.04em;padding:7px 9px;border-radius:10px;background:rgba(0,0,0,.65);border:1px solid rgba(255,179,71,.6);color:var(--sun)}
+.fcard .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px}
+.fcard .pl{font:700 .7rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.fcard p{margin:0;color:var(--mut);font-size:.9rem}
+@media (max-width:520px){.food{grid-template-columns:1fr 1fr;gap:10px}.fcard .bd{padding:10px 11px 12px}.fcard h3{font-size:1.2rem}.fcard p{display:none}.fcard .sc{font-size:.95rem;padding:5px 7px}}
+
+/* channels */
+.chan{display:grid;gap:14px;grid-template-columns:repeat(3,1fr);margin-bottom:22px}
+@media (max-width:820px){.chan{grid-template-columns:1fr}}
+.chan .big{min-height:170px}
+.sub2{font:900 1.9rem/1 var(--head);text-transform:uppercase;letter-spacing:.03em;margin:44px 0 6px}
+details.tpl{margin-top:22px;border:1px solid var(--line);border-radius:18px;background:var(--bg2)}
+details.tpl summary{cursor:pointer;padding:16px 18px;font-weight:800;letter-spacing:.06em;list-style:none}
+details.tpl summary::-webkit-details-marker{display:none}
+details.tpl summary:after{content:" +";color:var(--acc)}
+details.tpl[open] summary:after{content:" –"}
+details.tpl .grid{padding:0 14px 16px}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <nav aria-label="Primary"><div class="wrap">
-  <a class="logo" href="#top">MANO<b>.</b></a>
-  <a class="l" href="#crew">Bot Crew</a>
-  <a class="l" href="#templates">Templates</a>
+  <a class="logo" href="#top">HEY MANO<b>.</b></a>
+  <a class="l" href="#photos">Photos</a>
+  <a class="l" href="#food">Food</a>
   <a class="l" href="#reels">Reels</a>
-  <a class="l" href="#x">X</a>
-  <a class="l" href="#youtube">YouTube</a>
+  <a class="l" href="#tesla">Tesla · Grok AI</a>
   <a class="l" href="#links">Links</a>
 </div></nav>
 
 <main id="main">
 <header class="hero" id="top"><div class="wrap">
-  <span class="kicker">Tesla · AI agents · Reels</span>
-  <h1>Mano<sup>x1</sup></h1>
-  <p class="tag">Tesla on autopilot. <em>Grok</em> in the real world. A crew of AI bots running my day — and reels about all of it.</p>
-  <p class="te">Telugu + English, no filter. Quirky thoughts, take with a pinch of salt. <span lang="te">నమస్తే 🙏</span></p>
+  <span class="kicker">SoCal · Travel · Nature · Food · Tech</span>
+  <h1>Hey <span>Mano</span></h1>
+  <p class="tag">SoCal days, <em class="s">beaches</em> &amp; desert roads, <em class="o">starry skies</em>, way too much good food — and a little <em>Tesla + AI</em> on the side.</p>
+  <p class="te">Phone-camera clicks, food ratings and reels in Telugu + English. <span lang="te">నమస్తే 🙏</span></p>
+  <div class="chips" aria-label="Jump to">
+    <a href="#photos">🌄 Nature &amp; travel</a><a href="#food">🍛 Food</a><a href="#reels">▶ Reels</a><a href="#tesla">⚡ Tesla · Grok AI</a>
+  </div>
   <div class="cta">
-    <a class="btn p" id="ig-cta" href="https://www.instagram.com/mano_inst/reels/" rel="noopener">▶ Watch reels</a>
-    <a class="btn" href="#crew">Meet the bot crew</a>
-    <a class="btn" href="https://manowritingsblog.wordpress.com/" rel="noopener">Read the blog</a>
+    <a class="btn p" href="https://www.instagram.com/mano_inst/" rel="noopener">Instagram @mano_inst</a>
+    <a class="btn" href="https://www.youtube.com/@mano_inst" rel="noopener">YouTube</a>
+    <a class="btn" href="#food">Food I love</a>
   </div>
 </div></header>
 
-<section id="crew"><div class="wrap">
-  <span class="kicker">The Grok Bot crew</span>
-  <h2>Bot mind map</h2>
-  <p class="sub">One human, ten bots. Maestro conducts; everyone else has a lane — work, life, money, and making content.</p>
-  <div class="map desk" role="img" aria-label="Mind map: Mano at the center, Maestro the conductor beside him, and bots grouped into Work, Life, Money and Creator clusters."><svg id="mapsvg" viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg"></svg></div>
-  <div class="map-list" id="maplist"></div>
-  <div class="legend" id="legend"></div>
+<section id="photos"><div class="wrap">
+  <span class="kicker sea">Nature &amp; travel</span>
+  <h2>My clicks</h2>
+  <p class="sub">Just a phone and a lot of road. Beaches, hills, snow, sunrises and starry nights — from Kerala and the Western Ghats to West Texas. Tap any photo to open it.</p>
+  <div class="gal" id="gal"></div>
+  <div class="more"><a class="btn" href="https://manowritingsblog.wordpress.com/clicks/" rel="noopener">Full gallery on the blog →</a></div>
 </div></section>
 
-<section id="templates"><div class="wrap">
-  <span class="kicker">Steal my setup</span>
-  <h2>Bot templates</h2>
-  <p class="sub">I'll share the prompts and setups behind each bot here. Dropping one by one — check back.</p>
-  <div class="grid" id="tgrid"></div>
+<section id="food"><div class="wrap">
+  <span class="kicker sun">Food is my first ❤️</span>
+  <h2>Food love</h2>
+  <p class="sub">Dishes I've tasted and rated my own way — thalis on banana leaves, street chaat, beach-side seafood and sweets worth a flight.</p>
+  <div class="food" id="fgrid"></div>
+  <div class="more"><a class="btn" href="https://manowritingsblog.wordpress.com/foodlove/" rel="noopener">All food ratings on the blog →</a></div>
 </div></section>
 
 <section id="reels"><div class="wrap">
-  <span class="kicker">Instagram @mano_inst</span>
-  <h2>Tesla + Grok reels</h2>
-  <p class="sub">FSD naps, desert drives, Irvine's city of Teslas, and the Grok reel that went way further than expected.</p>
-  <div class="reels" id="rgrid"></div>
+  <span class="kicker">Reels · YouTube · X</span>
+  <h2>Watch &amp; follow</h2>
+  <p class="sub">Road trips, desert drives, SoCal life and the occasional Tesla moment — Telugu + English.</p>
+  <div class="chan">
+    <a class="card big" href="https://www.instagram.com/mano_inst/" rel="noopener" style="--c:var(--acc)">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.4a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 2.2c-2.7 0-3 0-4 .1-3.6.2-5.6 2.2-5.8 5.8-.1 1-.1 1.3-.1 3.9s0 3 .1 4c.2 3.6 2.2 5.6 5.8 5.8 1 .1 1.3.1 4 .1s3 0 4-.1c3.6-.2 5.6-2.2 5.8-5.8.1-1 .1-1.3.1-4s0-3-.1-4c-.2-3.5-2.2-5.6-5.8-5.8-1-.1-1.3-.1-4-.1Zm0 1.8c2.6 0 2.9 0 3.9.1 2.6.1 3.8 1.4 4 4 0 1 .1 1.3.1 3.9s0 2.9-.1 3.9c-.1 2.6-1.4 3.8-4 4-1 0-1.3.1-3.9.1s-2.9 0-3.9-.1c-2.6-.1-3.8-1.4-4-4 0-1-.1-1.3-.1-3.9s0-2.9.1-3.9c.1-2.6 1.4-3.8 4-4 1-.1 1.3-.1 3.9-.1Z"/></svg>
+      <span class="kicker">Instagram</span><h3>Reels</h3><p>Short travel, food &amp; drive reels.</p><span class="go">@mano_inst →</span>
+    </a>
+    <a class="card big" id="youtube" href="https://www.youtube.com/@mano_inst" rel="noopener" style="--c:#ff3b3b">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM9.7 15.1V8.9L15.5 12l-5.8 3.1Z"/></svg>
+      <span class="kicker">YouTube</span><h3>Shorts</h3><p>Desert drives, SoCal, nature &amp; Tesla POV.</p><span class="go">@mano_inst →</span>
+    </a>
+    <a class="card big" id="xcard" href="https://x.com/mano_tweets" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.3L6.6 22H3.5l7.3-8.3L1 2h6.3l4.3 5.7L18.9 2Zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20Z"/></svg>
+      <span class="kicker">X</span><h3>Thoughts</h3><p>Travel notes, tech and whatever's on my mind.</p><span class="go" id="xhandle">@mano_tweets →</span>
+    </a>
+  </div>
+  <h3 class="sub2">Road-trip reels</h3>
+  <div class="reels" id="trgrid"></div>
   <div class="more"><a class="btn" href="https://www.instagram.com/mano_inst/reels/" rel="noopener">All reels on Instagram →</a></div>
 </div></section>
 
-<section id="x"><div class="wrap">
-  <div class="split">
-    <a class="card big" id="xcard" href="https://x.com/mano_tweets" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.3L6.6 22H3.5l7.3-8.3L1 2h6.3l4.3 5.7L18.9 2Zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20Z"/></svg>
-      <span class="kicker">X portfolio</span>
-      <h3>Hot takes on X</h3>
-      <p>Tesla, AI, Grok experiments and whatever's on my mind.</p>
-      <span class="go" id="xhandle">@mano_tweets →</span>
-    </a>
-    <div class="card big" id="youtube" style="--c:#ff3b3b">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM9.7 15.1V8.9L15.5 12l-5.8 3.1Z"/></svg>
-      <span class="kicker">YouTube</span>
-      <h3>YouTube</h3>
-      <p>Tesla POV Shorts — FSD, desert drives, SoCal, Telugu + English.</p>
-      <span class="soon">Coming soon</span>
-    </div>
-  </div>
+<section id="tesla"><div class="wrap">
+  <span class="kicker">Tesla · Grok AI · one of my hobbies</span>
+  <h2>Tesla · Grok AI</h2>
+  <p class="sub">The nerdy corner: FSD drives, real-world Grok experiments and a small crew of AI bots that help run my day.</p>
+  <div class="map desk" role="img" aria-label="Mind map: Mano at the center, Maestro the conductor beside him, and bots grouped into Work, Life, Money and Creator clusters."><svg id="mapsvg" viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <div class="map-list" id="maplist"></div>
+  <div class="legend" id="legend"></div>
+  <details class="tpl" id="templates"><summary>Bot templates — steal my setup</summary><div class="grid" id="tgrid"></div></details>
+  <h3 class="sub2">Tesla + Grok reels</h3>
+  <div class="reels" id="rgrid"></div>
 </div></section>
 
 <section id="closer"><div class="wrap">
   <div class="closer">
-    <span class="kicker">to know more</span>
-    <p>No paywalls, no pitch. I'm keeping all of this free and open — take whatever's useful.</p>
+    <span class="kicker">say hi</span>
+    <p>No paywalls, no pitch. Travel tips, food recs or just hello — I'm always up for a chat.</p>
     <a class="btn p" href="https://www.instagram.com/mano_inst/" rel="noopener">Say hi on Instagram → @mano_inst</a>
-    <div class="alt"><a href="https://manowritingsblog.wordpress.com/" rel="noopener">the blog</a> &nbsp;·&nbsp; <a id="xcloser" href="https://x.com/mano_tweets" rel="noopener">X @mano_tweets</a></div>
+    <div class="alt"><a href="https://manowritingsblog.wordpress.com/foodlove/" rel="noopener">food on the blog</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@mano_inst" rel="noopener">YouTube</a> &nbsp;·&nbsp; <a id="xcloser" href="https://x.com/mano_tweets" rel="noopener">X @mano_tweets</a></div>
   </div>
 </div></section>
 </main>
 
 <footer id="links"><div class="wrap">
-  <div class="fbig">STAY<b>.</b> TUNED</div>
+  <div class="fbig">HEY MANO<b>.</b></div>
   <div class="soc">
     <a class="btn p" href="https://www.instagram.com/mano_inst/" rel="noopener">Instagram @mano_inst</a>
-    <a class="btn" href="https://manowritingsblog.wordpress.com/" rel="noopener">Blog · Mano Writings</a>
+    <a class="btn" href="https://www.youtube.com/@mano_inst" rel="noopener">YouTube @mano_inst</a>
+    <a class="btn" href="https://manowritingsblog.wordpress.com/foodlove/" rel="noopener">Blog · Food &amp; clicks</a>
     <a class="btn" id="xfoot" href="https://x.com/mano_tweets" rel="noopener">X @mano_tweets</a>
   </div>
-  <small>Built by Mano + his bots. No trackers, no cookies.</small>
-  <small>© <span id="yr">2026</span> Mano</small>
+  <small>SoCal · Travel · Nature · Food · Tech. Photos are my own phone clicks, hosted on my blog.</small>
+  <small>No cookies, no ad trackers — just an anonymous visit counter. © <span id="yr">2026</span> Mano</small>
 </div></footer>
+
+<dialog class="lb" id="lb" aria-label="Photo viewer"><button class="x" id="lbx" aria-label="Close">✕</button><img id="lbimg" alt=""><p id="lbcap"></p></dialog>
 
 <script>
 /* ===== EDIT ME: all content lives here ===== */
 const X_HANDLE = "mano_tweets";
-const YOUTUBE_URL = "https://www.youtube.com/@manojreddy444"; // "" = coming soon
+const YOUTUBE_URL = "https://www.youtube.com/@mano_inst";
+const WP = "https://manowritingsblog.wordpress.com/wp-content/uploads/";
+const img = (p,w)=>WP+p+"?w="+w;
+
+/* Nature & travel gallery: [file under WP uploads, title, place, year] */
+const PHOTOS = [
+  ["2023/10/varkala.jpeg","Expanse","Varkala, Kerala","2021"],
+  ["2023/10/astro.jpg","Starry night","Bobbili, India","2021"],
+  ["2023/10/snow.jpeg","Snow-scape","Lubbock, TX","2023"],
+  ["2023/10/reflection.jpeg","Mirror","Lubbock, TX","2023"],
+  ["2020/01/munnar-2.jpg","Spectacular view","Munnar","2018"],
+  ["2023/10/way.jpeg","Country road","Bobbili, India","2020"],
+  ["2020/01/viz_alone-e1580307775142.jpg","Solo","RK Beach, Vizag","2019"],
+  ["2020/01/kodai.jpg","Curvy beauty","Kodaikanal","2019"],
+  ["2023/10/sun.jpeg","Sunrise","Bobbili, India","2021"],
+  ["2020/01/munnar2.jpg","Tea gardens","Munnar","2019"],
+  ["2020/01/beach_cric.jpg","Beach cricket","RK Beach, Vizag","2019"],
+  ["2020/01/kodai2-1.jpg","Pillar Rock","Kodaikanal","2019"],
+  ["2020/01/port_ship.jpg","Port boats","Visakhapatnam","2019"],
+  ["2020/01/pondi.jpg","Cycle & slate","Pondicherry","2019"],
+  ["2023/10/dice.jpg","Tipping point","Bobbili, India","2020"],
+  ["2023/10/vn.jpeg","Vintage shack","Hampi","2019"]
+];
+
+/* Food: [file, dish, place, year, taste score, note] */
+const FOOD = [
+  ["2020/01/kriyates.jpg","Thanjavur Thali","Chennai","2019","10","Banana leaf, copper glasses and stone kal chattis — pure Thanjavur."],
+  ["2020/01/mandi.jpg","Chicken Mandi","Hyderabad","2019","10","Arabian-style mandi loaded with fragrant dry fruits. A must."],
+  ["2023/10/kch.jpeg","Kolkata Chaat","Kolkata","2021","10","Went to the city for its famous street food. Lived up to the hype."],
+  ["2020/01/vivaha.jpg","Rayalaseema Kodi Palav","Hyderabad","2017","10","Spicy Andhra-style chicken palav — Rayalaseema does heat right."],
+  ["2023/10/tb.jpeg","Tokyo Banana","Tokyo","2023","10","Banana sponge cake tasted mid-journey. Soft, sweet, perfect."],
+  ["2020/01/putha.jpg","Pootha Rekhulu","Atreyapuram","—","10","Paper-thin rice-starch sweet made on a hot mud pot. Telugu pride."],
+  ["2023/10/crab.jpeg","Goan Delight","Goa","2021","7","First garlic lobster & crab, dinner on the beach with the waves."],
+  ["2023/10/sadya.jpeg","Kerala Sadya","Kochi","2021","9","A traditional feast at my best friend's wedding."],
+  ["2020/01/chocoidli.jpg","Choco Idli","Chennai","2019","9","Fluffy idli dressed in hot chocolate — South Indian dessert!"],
+  ["2020/01/ram_ki_bandi.jpg","Ram Ki Bandi","Hyderabad","2018","9","Legendary hawker stall for ghee-loaded South Indian breakfast."],
+  ["2020/01/rasavid_dragon.jpg","Dragon Chicken","Chennai","2018","9","Spicy, crunchy, a hint of sweet. One of my all-time favourites."],
+  ["2020/01/corn.jpg","Corn on Coal","Munnar","2018","7","Roasted corn at 13°C in the misty 'Kashmir of South India'."]
+];
 
 const CLUSTERS = {
   core:    {label:"Core",    color:"#ffffff"},
@@ -243,15 +345,17 @@ const BOTS = [
 
 /* Reels: real links only. url "" falls back to the reels tab. */
 const REELS_TAB = "https://www.instagram.com/mano_inst/reels/";
-const REELS = [
-  {title:"GROK UNHINGED", tag:"x1", views:"352K", badge:"Top reel", hot:true, url:"https://www.instagram.com/mano_inst/reel/DaH7CowsW-p/", g:"linear-gradient(160deg,#3a0a26,#0b0710 70%)"},
+const TRAVEL_REELS = [
   {title:"DESERT", views:"27K", badge:"Telugu", url:"", g:"linear-gradient(160deg,#5a3410,#140a05 70%)"},
   {title:"AMRUTHAM IN DESERT", views:"6.3K", badge:"Road trip", url:"https://www.instagram.com/mano_inst/reel/DZ23U8cBk2K/", g:"linear-gradient(160deg,#6b4a12,#120c05 70%)"},
-  {title:"ZERO", views:"5.2K", badge:"Tesla", url:"https://www.instagram.com/mano_inst/reel/Da2s_ADtEbN/", g:"linear-gradient(160deg,#10243a,#05080d 70%)"},
-  {title:"FSD × GTA VI", views:"3.1K", badge:"FSD", url:"https://www.instagram.com/mano_inst/reel/DZyPun_h4sK/", g:"linear-gradient(160deg,#2b1240,#08050d 70%)"},
-  {title:"GROK UNHINGED", tag:"full", views:"2K", badge:"Full video", url:"https://www.instagram.com/mano_inst/reel/DaPeVMqxxNB/", g:"linear-gradient(160deg,#2a0a1c,#0a0609 70%)"},
   {title:"NAP", views:"1.2K", badge:"Death Valley", url:"https://www.instagram.com/mano_inst/reel/Dch7ZsIOShg/", g:"linear-gradient(160deg,#1a2a2a,#060909 70%)"},
   {title:"CITY OF TESLAS", views:"741", badge:"SoCal", url:"https://www.instagram.com/mano_inst/reel/DceBlb4hSVl/", g:"linear-gradient(160deg,#122a1e,#050a07 70%)"}
+];
+const REELS = [
+  {title:"GROK UNHINGED", tag:"x1", views:"352K", badge:"Top reel", hot:true, url:"https://www.instagram.com/mano_inst/reel/DaH7CowsW-p/", g:"linear-gradient(160deg,#3a0a26,#0b0710 70%)"},
+  {title:"ZERO", views:"5.2K", badge:"Tesla", url:"https://www.instagram.com/mano_inst/reel/Da2s_ADtEbN/", g:"linear-gradient(160deg,#10243a,#05080d 70%)"},
+  {title:"FSD × GTA VI", views:"3.1K", badge:"FSD", url:"https://www.instagram.com/mano_inst/reel/DZyPun_h4sK/", g:"linear-gradient(160deg,#2b1240,#08050d 70%)"},
+  {title:"GROK UNHINGED", tag:"full", views:"2K", badge:"Full video", url:"https://www.instagram.com/mano_inst/reel/DaPeVMqxxNB/", g:"linear-gradient(160deg,#2a0a1c,#0a0609 70%)"}
 ];
 /* ===== end edit ===== */
 
@@ -262,7 +366,18 @@ document.getElementById("yr").textContent=new Date().getFullYear();
 // X + YouTube
 ["xcard","xfoot","xcloser"].forEach(id=>$("#"+id).href="https://x.com/"+X_HANDLE);
 $("#xhandle").textContent="@"+X_HANDLE+" →"; $("#xfoot").textContent="X @"+X_HANDLE; $("#xcloser").textContent="X @"+X_HANDLE;
-if(YOUTUBE_URL){const y=$("#youtube");const a=document.createElement("a");a.className=y.className;a.id="youtube";a.href=YOUTUBE_URL;a.rel="noopener";a.innerHTML=y.innerHTML.replace("channel coming soon","subscribe").replace('<span class="soon">Coming soon</span>','<span class="go">@manojreddy444 →</span>');y.replaceWith(a);}
+document.querySelectorAll('a[href*="youtube.com/@"]').forEach(a=>a.href=YOUTUBE_URL);
+
+// gallery + lightbox
+$("#gal").innerHTML=PHOTOS.map((p,i)=>`<figure><button type="button" data-i="${i}" aria-label="Open photo: ${esc(p[1])}, ${esc(p[2])}"><img src="${img(p[0],640)}" srcset="${img(p[0],480)} 480w, ${img(p[0],800)} 800w" sizes="(max-width:520px) 50vw, 340px" alt="${esc(p[1]+" — "+p[2])}" loading="lazy" decoding="async"></button><figcaption><b>${esc(p[1])}</b>${esc(p[2])} · ${esc(p[3])}</figcaption></figure>`).join("");
+const lb=$("#lb");
+$("#gal").addEventListener("click",e=>{const b=e.target.closest("button[data-i]");if(!b)return;const p=PHOTOS[+b.dataset.i];
+  $("#lbimg").src=img(p[0],1400);$("#lbimg").alt=p[1]+" — "+p[2];$("#lbcap").innerHTML=`<b>${esc(p[1])}</b> · ${esc(p[2])} · ${esc(p[3])}`;
+  if(lb.showModal)lb.showModal();else window.open(img(p[0],1400));});
+$("#lbx").onclick=()=>lb.close(); lb.addEventListener("click",e=>{if(e.target===lb)lb.close();});
+
+// food
+$("#fgrid").innerHTML=FOOD.map(f=>`<article class="fcard"><div class="ph"><img src="${img(f[0],520)}" alt="${esc(f[1])}" loading="lazy" decoding="async"><span class="sc" title="Taste score">${esc(f[4])}/10</span></div><div class="bd"><span class="pl">📍 ${esc(f[2])}${f[3]!=="—"?" · "+esc(f[3]):""}</span><h3>${esc(f[1])}</h3><p>${esc(f[5])}</p></div></article>`).join("");
 
 // legend
 $("#legend").innerHTML=Object.values(CLUSTERS).map(c=>`<span><i style="background:${c.color}"></i>${c.label}</span>`).join("");
@@ -303,7 +418,27 @@ $("#tgrid").innerHTML=BOTS.map(b=>{const c=CLUSTERS[b.cluster];const inner=`<spa
                    :`<div class="card tcard" style="--c:${c.color}">${inner}<span class="soon">Template coming soon</span></div>`;}).join("");
 
 // reels
-$("#rgrid").innerHTML=REELS.map(r=>`<a class="reel" style="--g:${r.g}" href="${esc(r.url||REELS_TAB)}" rel="noopener" aria-label="${esc(r.title+(r.tag?" "+r.tag:""))} reel on Instagram"><span class="badge${r.hot?" hot":""}">${esc(r.badge)}</span><span class="t">${esc(r.title)}${r.tag?`<sup>${esc(r.tag)}</sup>`:""}</span><span class="m"><span class="v">▶ ${esc(r.views)}</span><span>Watch →</span></span></a>`).join("");
+const reelHTML=r=>`<a class="reel" style="--g:${r.g}" href="${esc(r.url||REELS_TAB)}" rel="noopener" aria-label="${esc(r.title+(r.tag?" "+r.tag:""))} reel on Instagram"><span class="badge${r.hot?" hot":""}">${esc(r.badge)}</span><span class="t">${esc(r.title)}${r.tag?`<sup>${esc(r.tag)}</sup>`:""}</span><span class="m"><span class="v">▶ ${esc(r.views)}</span><span>Watch →</span></span></a>`;
+$("#rgrid").innerHTML=REELS.map(reelHTML).join("");
+$("#trgrid").innerHTML=TRAVEL_REELS.map(reelHTML).join("");
+
+// ===== free visitor counter (Abacus, no signup) — stats: /stats.html =====
+const CNT="https://abacus.jasoncameron.dev/hit/mano444-github-io/";
+const hit=k=>{try{fetch(CNT+k,{keepalive:true,cache:"no-store"}).catch(()=>{});}catch(e){}};
+const trackKey=a=>{if(a.dataset.t)return a.dataset.t;let u;try{u=new URL(a.href);}catch(e){return null;}
+  if(u.origin===location.origin)return null;
+  const h=u.hostname.replace(/^www\./,""),seg=u.pathname.split("/").filter(Boolean);
+  if(h==="instagram.com")return seg[1]==="reel"&&seg[2]?"reel-"+seg[2]:(seg[1]==="reels"?"instagram-reels":"instagram");
+  if(h.endsWith("youtube.com"))return "youtube";
+  if(h==="x.com")return "x";
+  if(h.endsWith("wordpress.com"))return "blog-"+(seg[0]||"home");
+  return h.replace(/[^a-z0-9.-]/gi,"").slice(0,40);};
+if(!/[?&]nocount/.test(location.search)&&!localStorage.getItem("nocount")){
+  hit("visits");
+  if(!localStorage.getItem("hm_seen")){localStorage.setItem("hm_seen","1");hit("unique");}
+  document.addEventListener("click",e=>{const a=e.target.closest("a[href]");if(a){const k=trackKey(a);if(k)hit("click-"+k.replace(/[^A-Za-z0-9_.-]/g,"").slice(0,56));}
+    else if(e.target.closest("#gal button"))hit("photo-open");},true);
+}
 </script>
 </body>
 </html>

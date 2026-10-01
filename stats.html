@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hey Mano — site stats</title><meta name="robots" content="noindex">
+<style>
+body{margin:0;background:#07070a;color:#f4f4f6;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:36px 20px 60px}
+h1{font:900 3rem/.9 "Bebas Neue","Oswald","Impact","Arial Narrow",sans-serif;text-transform:uppercase;margin:0 0 6px}h1 b{color:#ff2d95}
+p{color:#a3a3b2}.big{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}
+.k{background:#14141b;border:1px solid #23232e;border-radius:18px;padding:18px}.k .n{font:900 2.8rem/1 "Bebas Neue","Impact",sans-serif;color:#ffb347}.k .l{color:#a3a3b2;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+table{width:100%;border-collapse:collapse;margin-top:10px}td{padding:10px 8px;border-bottom:1px solid #23232e}td:last-child{text-align:right;font-weight:800;color:#3fd0c9}
+button,a.b{background:#14141b;color:#fff;border:1px solid #23232e;border-radius:999px;padding:10px 16px;font:700 .85rem system-ui;cursor:pointer;text-decoration:none;display:inline-block;margin:4px 6px 0 0}
+small{color:#6f6f7e}
+</style></head><body><div class="wrap">
+<h1>Site stats<b>.</b></h1>
+<p>Live counts for <a href="/" style="color:#fff">mano444.github.io</a>. Free, no signup, no cookies — powered by the public <a href="https://abacus.jasoncameron.dev" style="color:#fff">Abacus</a> counter API.</p>
+<div class="big"><div class="k"><div class="n" id="visits">…</div><div class="l">Page views</div></div><div class="k"><div class="n" id="unique">…</div><div class="l">Unique visitors (browsers)</div></div></div>
+<h2 style="margin:28px 0 0">Link clicks</h2>
+<table id="t"><tr><td>Loading…</td><td></td></tr></table>
+<p style="margin-top:26px"><button id="me">Don't count my own visits on this device</button> <button id="re">Refresh</button></p>
+<p><small>Unique = first visit from each browser (localStorage). Counts are public and approximate (blockers can hide visits). Counter keys expire if there are no hits for ~6 months.</small></p>
+</div>
+<script>
+const NS="mano444-github-io",API="https://abacus.jasoncameron.dev/get/"+NS+"/";
+const LINKS=[["click-instagram","Instagram profile"],["click-instagram-reels","Instagram reels tab"],["click-youtube","YouTube @mano_inst"],["click-x","X @mano_tweets"],
+["click-blog-foodlove","Blog — Food love"],["click-blog-clicks","Blog — My clicks"],["click-blog-home","Blog — home"],["photo-open","Gallery photos opened"],
+["click-reel-DaH7CowsW-p","Reel: Grok Unhinged x1"],["click-reel-DaPeVMqxxNB","Reel: Grok Unhinged (full)"],["click-reel-DZ23U8cBk2K","Reel: Amrutham in Desert"],["click-reel-Dch7ZsIOShg","Reel: Nap (Death Valley)"],
+["click-reel-DceBlb4hSVl","Reel: City of Teslas"],["click-reel-Da2s_ADtEbN","Reel: Zero"],["click-reel-DZyPun_h4sK","Reel: FSD × GTA VI"]];
+const get=k=>fetch(API+k,{cache:"no-store"}).then(r=>r.json()).then(j=>j.value||0).catch(()=>0);
+async function load(){
+  get("visits").then(v=>visits.textContent=v.toLocaleString());get("unique").then(v=>unique.textContent=v.toLocaleString());
+  const rows=await Promise.all(LINKS.map(async([k,l])=>[l,await get(k)]));rows.sort((a,b)=>b[1]-a[1]);
+  t.innerHTML=rows.map(([l,v])=>`<tr><td>${l}</td><td>${v.toLocaleString()}</td></tr>`).join("");}
+load();re.onclick=load;
+me.onclick=()=>{localStorage.setItem("nocount","1");me.textContent="✓ Your visits on this device are no longer counted";};
+if(localStorage.getItem("nocount"))me.textContent="✓ Your visits on this device are not counted";
+</script></body></html>
