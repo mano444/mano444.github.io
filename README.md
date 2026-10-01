@@ -1,6 +1,6 @@
 # mano444.github.io
 
-**Hey Mano** — SoCal · Travel · Nature · Food · Tech — https://mano444.github.io/
+**Hey Mano** — Grok · AI · Tesla · SoCal · Travel · Food — https://mano444.github.io/
 
 Single static `index.html`, no build step, no cookies.
 
